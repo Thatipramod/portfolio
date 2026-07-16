@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    
+<title>Pramod | AI & ML Portfolio</title>
+<meta name="description" content="Thati Pramod — Aspiring Software Engineer specializing in AI & Machine Learning." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Inter:wght@400;500;600;700;800;900&family=Space+Grotesk:wght@500;700&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+<link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="ambient">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<nav class="navbar" id="navbar">
+  <a href="#home" class="logo" data-hover>Pramod<span class="dot">.</span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <div class="nav-menu" id="navMenu">
+    <ul class="nav-links">
+      <li><a class="nav-link" href="#home" data-hover>Home</a></li>
+      <li><a class="nav-link" href="#projects" data-hover>Projects</a></li>
+      <li><a class="nav-link" href="#certifications" data-hover>Certifications</a></li>
+      <li><a class="nav-link" href="#about" data-hover>About</a></li>
+      <li><a class="nav-link" href="#stack" data-hover>Tech Stack</a></li>
+      <li><a class="nav-link" href="#contact" data-hover>Contact</a></li>
+    </ul>
+  </div>
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-hover>
+      <i class="fa-solid fa-sun sun-icon"></i>
+      <i class="fa-solid fa-moon moon-icon"></i>
+    </button>
+    <a href="#" class="cv-btn magnetic" data-hover><i class="fa-solid fa-download"></i> Download CV</a>
+  </div>
+</nav>
+
+<section id="home" class="section hero-section">
+  <div class="container">
+    <div class="box hero-box reveal">
+      <canvas id="dots"></canvas>
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="intro"><span class="dot-live"></span> INITIALIZING_PROFILE...</p>
+          <h2 class="hi">Hi There! <span class="wave">👋</span></h2>
+          <h1>I'm <span class="stylized-name highlight">Thati Pramod</span></h1>
+          <div class="typing-wrapper">
+            <span class="typing-text" data-text='["Aspiring Software Engineer","AI &amp; ML Enthusiast","Full-Stack Learner","Problem Solver"]'></span>
+          </div>
+          <p class="subtitle">Aspiring Software Engineer | AI &amp; ML Student</p>
+          <p class="lead">I'm a passionate B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning. I love building efficient, scalable and delightful applications.</p>
+          <a href="#contact" class="connect-btn magnetic" data-hover>Let's Connect <i class="fa-solid fa-arrow-right"></i></a>
+          <div class="socials">
+            <a href="#" class="social-link" data-hover aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" data-hover aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="mailto:pramodthati04@gmail.com" class="social-link" data-hover aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <div class="orbit"></div>
+            <div class="orbit orbit-2"></div>
+            <div class="avatar tilt" data-tilt>
+              <div class="avatar-inner"><i class="fa-solid fa-user-astronaut"></i></div>
+              <div class="badge badge-1"><i class="fa-brands fa-python"></i></div>
+              <div class="badge badge-2"><i class="fa-solid fa-brain"></i></div>
+              <div class="badge badge-3"><i class="fa-solid fa-code"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="container">
+    <div class="box reveal">
+      <div class="text-center">
+        <p class="eyebrow">// SELECTED_WORK</p>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      </div>
+      <div class="projects-grid">
+        <article class="project-card tilt" data-tilt data-hover>
+          <div class="image-container">
+            <div class="img-fallback"><i class="fa-solid fa-house-chimney"></i></div>
+            <div class="overlay"><button class="view-btn magnetic">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div>
+          </div>
+          <div class="project-info">
+            <span class="tag-mini">Machine Learning</span>
+            <h3>House Price Prediction</h3>
+            <p class="project-desc">ML model using regression techniques to predict real-estate prices with high accuracy.</p>
+            <div class="project-links">
+              <a class="github-btn" href="#" data-hover><i class="fa-brands fa-github"></i> Code</a>
+              <a class="demo-btn" href="#" data-hover><i class="fa-solid fa-rocket"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card tilt" data-tilt data-hover>
+          <div class="image-container">
+            <div class="img-fallback"><i class="fa-solid fa-hospital"></i></div>
+            <div class="overlay"><button class="view-btn magnetic">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div>
+          </div>    
+          <div class="project-info">
+            <span class="tag-mini">Full-Stack</span>
+            <h3>Hospital Management</h3>
+            <p class="project-desc">A complete patient &amp; staff management system with dashboards and billing.</p>
+            <div class="project-links">
+              <a class="github-btn" href="#" data-hover><i class="fa-brands fa-github"></i> Code</a>
+              <a class="demo-btn" href="#" data-hover><i class="fa-solid fa-rocket"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-card tilt" data-tilt data-hover>
+          <div class="image-container">
+            <div class="img-fallback"><i class="fa-solid fa-chart-line"></i></div>
+            <div class="overlay"><button class="view-btn magnetic">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></button></div>
+          </div>
+          <div class="project-info">
+            <span class="tag-mini">Data Viz</span>
+            <h3>Data Dashboard</h3>
+            <p class="project-desc">Interactive data visualization tool built with modern charting libraries.</p>
+            <div class="project-links">
+              <a class="github-btn" href="#" data-hover><i class="fa-brands fa-github"></i> Code</a>
+              <a class="demo-btn" href="#" data-hover><i class="fa-solid fa-rocket"></i> Demo</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="box reveal">
+      <div class="text-center">
+        <p class="eyebrow">// ACHIEVEMENTS</p>
+        <h2 class="section-title">My <span class="highlight">Certifications</span></h2>
+      </div>
+      <div class="cert-grid">
+        <div class="flip-card" data-hover>
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><i class="fa-solid fa-chart-pie cert-icon"></i><h4>Data Visualization</h4></div>
+            <div class="flip-card-back"><h4>Data Visualization</h4><p>Expertise in Matplotlib, Seaborn and Plotly.</p><button class="cert-view-btn magnetic">View Certificate</button></div>
+          </div>
+        </div>
+        <div class="flip-card" data-hover>
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><i class="fa-brands fa-python cert-icon"></i><h4>Python Programming</h4></div>
+            <div class="flip-card-back"><h4>Python Certification</h4><p>Professional certification in Python 3.x — data structures, algorithms and automation.</p><button class="cert-view-btn magnetic">View Certificate</button></div>
+          </div>
+        </div>
+        <div class="flip-card" data-hover>
+          <div class="flip-card-inner">
+            <div class="flip-card-front"><i class="fa-solid fa-database cert-icon"></i><h4>Data Analysis</h4></div>
+            <div class="flip-card-back"><h4>Data Analysis</h4><p>Proficient in Pandas, NumPy and statistical modeling.</p><button class="cert-view-btn magnetic">View Certificate</button></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="container">
+    <div class="box reveal">
+      <div class="text-center">
+        <p class="eyebrow">// WHO_AM_I</p>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+      <div class="about-content">
+        <div class="about-text">
+          <p>I'm currently pursuing my <strong>B.Tech in Computer Science &amp; Engineering</strong>, specializing in <strong>Artificial Intelligence and Machine Learning</strong>. I have a strong foundation in Python and Java, and I love crafting responsive web applications.</p>
+          <p>I thrive at the intersection of design and engineering — turning ideas into products that feel effortless.</p>
+          <div class="stats">
+            <div class="stat"><span class="num" data-count="15">0</span><span>Projects</span></div>
+            <div class="stat"><span class="num" data-count="8">0</span><span>Certifications</span></div>
+            <div class="stat"><span class="num" data-count="3">0</span><span>Years Coding</span></div>
+          </div>
+        </div>
+        <div class="about-image">
+          <div class="about-avatar tilt" data-tilt><i class="fa-solid fa-laptop-code"></i></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="stack" class="section">
+  <div class="container">
+    <div class="box reveal">
+      <div class="text-center">
+        <p class="eyebrow">// TOOLS_OF_TRADE</p>
+        <h2 class="section-title">My <span class="highlight">Tech Stack</span></h2>
+      </div>
+      <div class="skills-container">
+        <div class="skill-tag" data-hover><i class="fa-brands fa-python"></i> Python</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-java"></i> Java</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-brain"></i> Machine Learning</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-html5"></i> HTML5</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-css3-alt"></i> CSS3</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-js"></i> JavaScript</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-github"></i> GitHub</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-react"></i> React</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-database"></i> SQL</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="container">
+    <div class="box reveal">
+      <div class="contact-container">
+        <div class="contact-left">
+          <p class="eyebrow">// CONTACT_ME</p>
+          <h2>Get In <span class="highlight">Touch</span></h2>
+          <p class="lead">Let's convert your ideas into real, impactful results.</p>
+          <div class="email-box" data-hover>
+            <i class="fa-solid fa-envelope"></i>
+            <span>pramodthati04@gmail.com</span>
+          </div>
+          <div class="socials">
+            <a href="#" class="social-link" data-hover><i class="fa-brands fa-github"></i></a>
+            <a href="#" class="social-link" data-hover><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="social-link" data-hover><i class="fa-brands fa-twitter"></i></a>
+          </div>
+        </div>
+        <div class="contact-form-container">
+          <form class="modern-contact-form" id="contactForm">
+            <div class="input-group"><i class="fa-solid fa-user"></i><input type="text" placeholder="Your Name" required /></div>
+            <div class="input-group"><i class="fa-solid fa-envelope"></i><input type="email" placeholder="Your Email" required /></div>
+            <div class="input-group"><i class="fa-solid fa-comment"></i><textarea placeholder="Your Message" required></textarea></div>
+            <button type="submit" class="submit-btn magnetic" data-hover>SEND MESSAGE <i class="fa-solid fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p>© 2026 Thati Pramod. All rights reserved.</p>
+  <p>Designed &amp; Built with <i class="fa-solid fa-heart" style="color:#e94560"></i> by Pramod</p>
+</footer>
+
+<div class="toast" id="toast">Message sent!</div>
+
+<script src="./script.js"></script>
+</body>
+</html>
