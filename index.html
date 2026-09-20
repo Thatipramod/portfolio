@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,viewport-fit=cover">
+<meta name="description" content="Thati Pramod — B.Tech Computer Science student specializing in Artificial Intelligence and Machine Learning.">
+<meta name="keywords" content="Thati Pramod, AI ML, Python, Java, Machine Learning, Data Science, portfolio">
+<title>Pramod | AI & ML Portfolio</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@500;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div class="scroll-progress" id="scrollProgress"></div>
+
+<div class="ambient" aria-hidden="true">
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="grid-overlay"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="navbar" id="navbar">
+  <a href="#home" class="logo" data-hover>Pramod<span class="dot">.</span></a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="nav-menu" id="navMenu">
+    <ul class="nav-links">
+      <li><a class="nav-link active" href="#home" data-hover>Home</a></li>
+      <li><a class="nav-link" href="#projects" data-hover>Projects</a></li>
+      <li><a class="nav-link" href="#certifications" data-hover>Certifications</a></li>
+      <li><a class="nav-link" href="#about" data-hover>About</a></li>
+      <li><a class="nav-link" href="#stack" data-hover>Tech Stack</a></li>
+      <li><a class="nav-link" href="#education" data-hover>Education</a></li>
+      <li><a class="nav-link" href="#contact" data-hover>Contact</a></li>
+    </ul>
+  </div>
+
+  <div class="nav-actions">
+    <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme" data-hover>
+      <i class="fa-solid fa-sun sun-icon"></i>
+      <i class="fa-solid fa-moon moon-icon"></i>
+    </button>
+    <a href="./Resume.pdf" class="cv-btn magnetic" download data-hover>
+      <i class="fa-solid fa-download"></i> Download CV
+    </a>
+  </div>
+</nav>
+
+<main>
+
+<!-- HOME -->
+<section id="home" class="section hero-section">
+  <div class="container">
+    <div class="box hero-box reveal">
+      <canvas id="dots"></canvas>
+
+      <div class="hero-content">
+        <div class="hero-text">
+          <p class="intro"><span class="dot-live"></span> INITIALIZING_PROFILE...</p>
+          <h2 class="hi">Hi There! <span class="wave">👋</span></h2>
+          <h1>I'm <span class="stylized-name highlight">Thati Pramod</span></h1>
+
+          <div class="typing-wrapper">
+            <span class="typing-text" id="typingText"></span>
+          </div>
+
+          <p class="subtitle">B.Tech CSE (AI & ML) Student | Aspiring Data Scientist</p>
+
+          <p class="lead">
+            I'm a passionate Computer Science engineering student specializing in Artificial Intelligence and Machine Learning. I enjoy building practical software, exploring machine learning, and continuously improving my problem-solving skills.
+          </p>
+
+          <a href="#contact" class="connect-btn magnetic" data-hover>
+            Let's Connect <i class="fa-solid fa-arrow-right"></i>
+          </a>
+
+          <div class="socials">
+            <a href="mailto:pramodthati03@gmail.com" class="social-link" data-hover aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/thati-pramod" class="social-link" data-hover target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#projects" class="social-link" data-hover aria-label="Projects">
+              <i class="fa-solid fa-code"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual">
+          <div class="avatar-ring">
+            <div class="orbit"></div>
+            <div class="orbit orbit-2"></div>
+
+            <div class="avatar tilt" data-tilt>
+              <div class="avatar-inner"><i class="fa-solid fa-user-astronaut"></i></div>
+              <div class="badge badge-1"><i class="fa-brands fa-python"></i></div>
+              <div class="badge badge-2"><i class="fa-solid fa-brain"></i></div>
+              <div class="badge badge-3"><i class="fa-solid fa-code"></i></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Projects -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="box reveal">
+      <div class="text-center">
+        <p class="eyebrow">// SELECTED_WORK</p>
+        <h2 class="section-title">Featured <span class="highlight">Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Project 1 -->
+        <article class="project-card tilt" data-tilt data-hover>
+          <div class="image-container">
+            <img src="./assets/images/projects/house-price.jpg" alt="House Price Prediction Project">
+          </div>
+          <div class="project-info">
+            <span class="tag-mini">Machine Learning</span>
+            <h3>House Price Prediction</h3>
+            <p class="project-desc">
+              Built a machine learning model to predict house prices using housing data and data preprocessing techniques.
+            </p>
+            <div class="project-links">
+              <a class="github-btn" href="https://github.com/Thatipramod/house-price-prediction" target="_blank" rel="noopener">
+                <i class="fa-solid fa-code"></i> Code
+              </a>
+              <a class="demo-btn" href="https://houseprice-prediction1.streamlit.app/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-rocket"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card tilt" data-tilt data-hover>
+          <div class="image-container">
+            <img src="./assets/images/projects/spam-detection.jpg" alt="Spam Detection Project">
+          </div>
+          <div class="project-info">
+            <span class="tag-mini">Machine Learning</span>
+            <h3>Spam Detection</h3>
+            <p class="project-desc">
+              Developed a machine-learning spam detection system, compared three classification algorithms, and selected the best-performing model.
+            </p>
+            <div class="project-links">
+              <a class="github-btn" href="https://github.com/Thatipramod/spam-detection-ml" target="_blank" rel="noopener">
+                <i class="fa-solid fa-code"></i> Code
+              </a>
+              <a class="demo-btn" href="https://spam-predictor.streamlit.app/Spam_Predictor" target="_blank" rel="noopener">
+                <i class="fa-solid fa-rocket"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card tilt" data-tilt data-hover>
+          <div class="image-container">
+            <img src="./assets/images/projects/sales-prediction.jpg" alt="Sales Prediction System Project">
+          </div>
+          <div class="project-info">
+            <span class="tag-mini">Data Science</span>
+            <h3>Sales Prediction System</h3>
+            <p class="project-desc">
+              A sales prediction application using Python, Pandas, NumPy, Scikit-learn and Streamlit to predict sales from advertising data.
+            </p>
+            <div class="project-links">
+              <a class="github-btn" href="https://github.com/Thatipramod/codealpha_tasks/tree/main/CodeAlpha_sales_prediction" target="_blank" rel="noopener">
+                <i class="fa-solid fa-code"></i> Code
+              </a>
+              <a class="demo-btn" href="https://sales-prediction-analytics.streamlit.app/" target="_blank" rel="noopener">
+                <i class="fa-solid fa-rocket"></i> Demo
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Certifications -->
+<section id="certifications" class="section">
+  <div class="container">
+    <div class="box reveal">
+
+      <div class="text-center">
+        <p class="eyebrow">// ACHIEVEMENTS</p>
+        <h2 class="section-title">My <span class="highlight">Certifications</span></h2>
+      </div>
+
+      <div class="cert-grid">
+
+        <!-- Certificate 1 -->
+        <div class="flip-card" data-hover>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/certificates/Data Science vs Machine Learning vs Artificial Intelligence Masterclass.jpg" alt="Python Programming Workshop Certificate" class="cert-image">
+              <h4>Python Programming Workshop</h4>
+              <p>Think Champ Pvt. Ltd.</p>
+            </div>
+            <div class="flip-card-back">
+              <h4>Data Science vs Machine Learning vs Artificial Intelligence Masterclass</h4>
+              <p>Workshop certification covering Python programming fundamentals and practical coding skills.</p>
+              <a href="./assets/images/certificates/Data Science vs Machine Learning vs Artificial Intelligence Masterclass.jpg" class="cert-view-btn" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="flip-card" data-hover>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/certificates/python2.jpg" alt="Python Workshop Certificate" class="cert-image">
+              <h4>Python Workshop</h4>
+              <p>Think Champ Pvt. Ltd.</p>
+            </div>
+            <div class="flip-card-back">
+              <h4>Python Workshop</h4>
+              <p>Practical workshop covering Python programming and coding fundamentals.</p>
+              <a href="./assets/images/certificates/python2.jpg" class="cert-view-btn" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="flip-card" data-hover>
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <img src="./assets/images/certificates/datascience.jpg" alt="Data Science Certificate" class="cert-image">
+              <h4>Data Science Certificate</h4>
+              <p>Certification Program</p>
+            </div>
+            <div class="flip-card-back">
+              <h4>Data Science Certificate</h4>
+              <p>Certificate covering data analysis, Python, machine learning and related fundamentals.</p>
+              <a href="./assets/images/certificates/datascience.jpg" class="cert-view-btn" target="_blank" rel="noopener">View Certificate</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="box reveal">
+
+      <div class="text-center">
+        <p class="eyebrow">// WHO_AM_I</p>
+        <h2 class="section-title">About <span class="highlight">Me</span></h2>
+      </div>
+
+      <div class="about-content">
+
+        <div class="about-text">
+  <p>
+    I'm currently pursuing my <strong>B.Tech in Computer Science and Engineering</strong>
+    at <strong>Teegala Krishna Reddy College of Engineering, Hyderabad</strong>,
+    specializing in <strong>Artificial Intelligence and Machine Learning</strong>.
+  </p>
+
+  <p>
+    I have a strong foundation in <strong>Python</strong> and <strong>Java (Basics)</strong>,
+    along with experience using <strong>SQL, NumPy, Pandas, Matplotlib</strong> and
+    <strong>Data Visualization</strong>. I enjoy working with data, exploring patterns,
+    and applying machine learning algorithms to solve practical problems.
+  </p>
+
+  <p>
+    I have developed projects in areas such as <strong>Sales Prediction, House Price
+    Prediction</strong> and <strong>Spam Detection</strong>, gaining hands-on experience
+    in data preprocessing, exploratory data analysis, model training, evaluation and
+    building interactive applications using <strong>Streamlit</strong>.
+  </p>
+
+  <p>
+    Currently, I am strengthening my knowledge of <strong>Machine Learning and Data Science</strong>
+    while improving my <strong>problem-solving, programming and analytical skills</strong>.
+    My goal is to build practical AI/ML solutions and grow toward a career as a
+    <strong>Data Scientist or Machine Learning Engineer</strong>.
+  </p>
+
+          <div class="stats">
+            <div class="stat"><span class="num" data-count="3">4</span><span>Projects</span></div>
+            <div class="stat"><span class="num" data-count="3">3</span><span>Certificates</span></div>
+            <div class="stat"><span class="num" data-count="9.0">9.03</span><span>CGPA</span></div>
+          </div>
+        </div>
+
+        <div class="about-image">
+          <div class="about-avatar tilt" data-tilt>
+            <i class="fa-solid fa-laptop-code"></i>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- TECH STACK -->
+<section id="stack" class="section">
+  <div class="container">
+    <div class="box reveal">
+
+      <div class="text-center">
+        <p class="eyebrow">// TOOLS_OF_TRADE</p>
+        <h2 class="section-title">My <span class="highlight">Tech Stack</span></h2>
+      </div>
+
+      <div class="skills-container">
+        <div class="skill-tag" data-hover><i class="fa-brands fa-python"></i> Python</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-java"></i> Java (Basics)</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-brain"></i> Machine Learning</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-table-columns"></i> NumPy</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-database"></i> Pandas</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-chart-simple"></i> Matplotlib</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-html5"></i> HTML</div>
+        <div class="skill-tag" data-hover><i class="fa-brands fa-css3-alt"></i> CSS</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-sitemap"></i> OOP</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-code"></i> DSA Basics</div>
+        <div class="skill-tag" data-hover><i class="fa-solid fa-laptop-code"></i> VS Code</div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- EDUCATION -->
+<section id="education" class="section">
+  <div class="container">
+    <div class="box reveal">
+
+      <div class="text-center">
+        <p class="eyebrow">// ACADEMIC_BACKGROUND</p>
+        <h2 class="section-title">My <span class="highlight">Education</span></h2>
+      </div>
+
+      <div class="education-grid">
+
+        <article class="education-card">
+          <span class="year">2024 – 2028</span>
+          <h3>B.Tech in Engineering</h3>
+          <p>Teegala Krishna Reddy College of Engineering, Hyderabad</p>
+          <strong>CGPA: 9.0</strong>
+        </article>
+
+        <article class="education-card">
+          <span class="year">2022 – 2024</span>
+          <h3>Intermediate Education</h3>
+          <p>Sri Chaitanya, Khammam</p>
+          <strong>Percentage: 98.8%</strong>
+        </article>
+
+        <article class="education-card">
+          <span class="year">2021 – 2022</span>
+          <h3>SSC</h3>
+          <p>Karteek Vidyalayam, Pallipadu</p>
+          <strong>CGPA: 9.7</strong>
+        </article>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="box reveal">
+
+      <div class="contact-container">
+
+        <div class="contact-left">
+          <p class="eyebrow">// CONTACT_ME</p>
+          <h2>Get In <span class="highlight">Touch</span></h2>
+
+          <p class="lead">
+            I'm open to internships, learning opportunities, and software or machine-learning projects.
+          </p>
+
+          <a class="email-box" href="mailto:pramodthati03@gmail.com" data-hover>
+            <i class="fa-solid fa-envelope"></i>
+            <span>pramodthati03@gmail.com</span>
+          </a>
+
+          <a class="email-box" href="tel:+917731953447" data-hover>
+            <i class="fa-solid fa-phone"></i>
+            <span>+91 7731953447</span>
+          </a>
+
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/thati-pramod" class="social-link" data-hover target="_blank" rel="noopener" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="mailto:pramodthati03@gmail.com" class="social-link" data-hover aria-label="Email">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+
+
+        <div class="contact-form-container">
+          <form class="modern-contact-form" id="contactForm">
+
+            <div class="input-group">
+              <i class="fa-solid fa-user"></i>
+              <input id="name" type="text" placeholder="Your Name" required>
+            </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-envelope"></i>
+              <input id="email" type="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="input-group">
+              <i class="fa-solid fa-comment"></i>
+              <textarea id="message" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn magnetic" data-hover>
+              SEND MESSAGE <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+          </form>
+
+          <p class="form-note">
+            This form opens your email app with the message filled in.
+          </p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+
+<!-- FOOTER -->
+<footer class="footer">
+  <p>© 2026 Thati Pramod. All rights reserved.</p>
+  <p>Designed &amp; Built with <i class="fa-solid fa-heart"></i> by Pramod</p>
+</footer>
+
+<div class="toast" id="toast">Done!</div>
+
+<script src="./assets/js/script.js"></script>
+</body>
+</html>
